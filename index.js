@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const colors = require("colors");
-const uploader = require("../middleware/uploader");
+const uploader = require("./middleware/uploader");
 
 //middlewares
 app.use(express.json());
