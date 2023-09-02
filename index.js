@@ -13,13 +13,13 @@ app.get("/", (req, res) => {
 });
 
 
-app.post("/file-upload", uploader.array("image"), (req, res) => {
-    try {
-        res.status(200).json(req.files)   
-    } catch (error) {
-        res.status(401).json({msg:error})
-    }
-});
+// app.post("/file-upload", uploader.array("image"), (req, res) => {
+//     try {
+//         res.status(200).json(req.files)   
+//     } catch (error) {
+//         res.status(401).json({msg:error})
+//     }
+// });
 
 // server
 const port = 8000 || 8080;
